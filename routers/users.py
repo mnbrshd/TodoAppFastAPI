@@ -6,7 +6,7 @@ from passlib.context import CryptContext
 from sqlalchemy.orm import Session
 from typing import Annotated
 from pydantic import BaseModel
-from auth import get_current_user, get_password_hash, verify_password, get_db
+from routers.auth import get_current_user, get_password_hash, verify_password, get_db
 from fastapi.templating import Jinja2Templates
 
 router = APIRouter(
